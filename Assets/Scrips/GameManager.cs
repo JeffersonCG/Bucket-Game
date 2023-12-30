@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public float gameWidth = 20;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public static GameManager Instance {get; private set;}
+    public float gameWidth = 23;
+
+    void Awake(){
+        if(Instance != null && Instance != this){
+        Destroy(this);
+        }
+        else{
+        Instance = this;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

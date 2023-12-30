@@ -29,7 +29,11 @@ public class BallSpawner : MonoBehaviour
         int prefabIndex = Random.Range(0, prefabs.Count);
         GameObject prefab = prefabs[prefabIndex];
 
-        Vector3 position = originPoint;
+        float gameWidth = GameManager.Instance.gameWidth;
+
+        float xOffset = Random.Range(-gameWidth / 2f, gameWidth / 2f);
+
+        Vector3 position = originPoint + new Vector3(xOffset, 0, 0);
 
         Quaternion rotation = prefab.transform.rotation;
 
