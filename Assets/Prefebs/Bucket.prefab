@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1831646338692392660}
   - component: {fileID: 6176843999128705165}
   - component: {fileID: 5925747841550758353}
+  - component: {fileID: 5989259422617312441}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -105,6 +106,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5989259422617312441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508698358019294033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1b34972496cad4c85533fde412a24b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3860731606295458045
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103063143217660177}
+  - component: {fileID: 1143044054708821915}
   m_Layer: 0
   m_Name: Bucket
   m_TagString: Untagged
@@ -341,7 +355,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.397, y: -5.785, z: -0.9890005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2749, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4554685290642066653}
@@ -351,6 +365,19 @@ Transform:
   - {fileID: 163702482842077551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1143044054708821915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3970126889021070889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6592ebf1e775be43a861ec146231982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &6524860375660049435
 GameObject:
   m_ObjectHideFlags: 0
